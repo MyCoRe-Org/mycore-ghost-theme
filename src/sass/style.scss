@@ -7,6 +7,7 @@
 @import "icons";
 @import "fonts";
 @import "highlight";
+@import "mycoreExtras";
 
 /* ==========================================================================
    Basics
@@ -391,6 +392,7 @@ img {
 	position: relative;
 	padding: 6em 0;
 	text-align: center;
+  background: #356882;
 }
 #blog-header:after {
 	position: absolute;
@@ -463,6 +465,7 @@ img {
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
+  color: white;
 }
 .home-template .blog-name {
 	font-size: 3em;
@@ -780,6 +783,11 @@ img {
 	position: relative;
 	z-index: 40;
 	margin: auto 6em;
+
+  .post-author-name {
+    color: white;
+    margin-bottom: 1em;
+  }
 }
 #blog-author:after {
 	position: absolute;

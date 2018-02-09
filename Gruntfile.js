@@ -80,6 +80,9 @@ module.exports = function(grunt) {
                 files: '<%=  config.cssSrcDir %>/**/*.scss',
                 tasks: ['sass:dev','copy:dev','postcss:dev']
             }
+        },
+        zip: {
+            'mycore.zip': '**/*'
         }
     });
 
@@ -87,7 +90,8 @@ module.exports = function(grunt) {
         'sass:dist',
         'postcss:dist',
         'copy:dist',
-        'uglify'
+        'uglify',
+        'zip'
     ]);
     grunt.registerTask('default', [
         'sass:dev',
